@@ -1,0 +1,40 @@
+{
+  "$schema": "../app-info-schema.json",
+  "name": "Libre WebUI",
+  "available": true,
+  "exposable": true,
+  "dynamic_config": true,
+  "port": 8080,
+  "id": "libre-webui",
+  "tipi_version": 1,
+  "version": "0.30.0",
+  "categories": ["ai"],
+  "description": "Libre WebUI is a private, self-hosted AI chat platform. Talk to local models through Ollama or bring your own cloud provider keys, then layer on agents, automations and a knowledge base, all backed by your own data on your own server. This packaging ships the core chat platform; the optional Work sandboxed task runner is disabled because it requires direct Docker socket access, which is not exposed here.",
+  "short_desc": "Private, self-hosted AI chat with local and cloud models",
+  "author": "Libre WebUI",
+  "source": "https://github.com/libre-webui/libre-webui",
+  "website": "https://librewebui.org",
+  "form_fields": [
+    {
+      "type": "random",
+      "label": "JWT Secret",
+      "hint": "Used to sign session tokens. Auto-generated once and stored, no need to touch it.",
+      "min": 64,
+      "encoding": "hex",
+      "required": false,
+      "env_variable": "JWT_SECRET"
+    },
+    {
+      "type": "url",
+      "label": "Ollama Base URL",
+      "hint": "Optional. Point this at a reachable Ollama server to use local models, for example http://ollama-cpu:11434 if you installed one of the Ollama apps from this store (use the matching service name if you installed the AMD or NVIDIA build). Leave blank to use cloud providers configured inside the app instead.",
+      "placeholder": "http://ollama-cpu:11434",
+      "required": false,
+      "env_variable": "OLLAMA_BASE_URL"
+    }
+  ],
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1788104401263,
+  "updated_at": 1788104401263,
+  "min_tipi_version": "4.8.0"
+}
