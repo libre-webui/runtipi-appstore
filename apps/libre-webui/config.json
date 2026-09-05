@@ -6,8 +6,8 @@
   "dynamic_config": true,
   "port": 8080,
   "id": "libre-webui",
-  "tipi_version": 4,
-  "version": "0.33.0",
+  "tipi_version": 5,
+  "version": "0.34.0",
   "categories": [
     "ai"
   ],
@@ -40,6 +40,6 @@
     "amd64"
   ],
   "created_at": 1788104401263,
-  "updated_at": 1788517160396,
+  "updated_at": 1788634697890,
   "min_tipi_version": "4.8.0"
 }

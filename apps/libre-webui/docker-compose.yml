@@ -1,6 +1,6 @@
 services:
   libre-webui:
-    image: librewebui/libre-webui:0.33.0
+    image: librewebui/libre-webui:0.34.0
     volumes:
       - ${APP_DATA_DIR}/data:/app/backend/data
       - ${APP_DATA_DIR}/temp:/app/backend/temp
